@@ -181,7 +181,7 @@ You say: 'the world's greatest pizza, I've got to get there fast.'\n""".format(p
             action = input("""\nThe available movements are north, east, south and west.
 You may be limited in which direction you can move by the room you are in.
 Refer to the info right below room description to see available movement directions
-Input your action here--> \n """).lower()
+Input your action here-->""").lower()
             if action in ["north", "south", "east", "west"]:
                 current_room = current_room.movement(action)
                 mapmaker.movement(x_var[current_room], y_var[current_room])
